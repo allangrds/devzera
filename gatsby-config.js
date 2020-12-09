@@ -5,6 +5,7 @@ module.exports = {
     title: 'Devzera',
     siteUrl: 'https://devzera.com.br',
     description: 'Aprendendo e compartilhando tecnologia',
+    author: '@allangrds',
   },
   plugins: [
     'gatsby-plugin-postcss',

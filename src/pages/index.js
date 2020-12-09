@@ -1,9 +1,13 @@
 import React from 'react'
 
-import Hero from '../components/Hero'
+import {
+  Hero,
+  SEO,
+} from '../components'
 
 const IndexPage = () => (
   <>
+    <SEO title="Home" />
     <Hero />
   </>
 )
