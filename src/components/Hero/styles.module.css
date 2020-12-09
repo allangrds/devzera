@@ -42,8 +42,9 @@
 }
 
 .subtitle {
-  color: var(--color-gray-1);
+  color: var(--color-black-3);
   font-family: "Roboto", serif;
+  font-weight: normal;
   font-size: 2em;
   line-height: 35px;
   max-width: 50ch;
