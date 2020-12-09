@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 module.exports = {
   siteMetadata: {
     title: 'Devzera',
@@ -5,44 +7,53 @@ module.exports = {
     description: 'Aprendendo e compartilhando tecnologia',
   },
   plugins: [
-    "gatsby-plugin-postcss",
+    'gatsby-plugin-postcss',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "aaaaaaaaaaaa",
+        trackingId: 'aaaaaaaaaaaa',
       },
     },
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-image',
     {
-      resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/assets/images/",
+        postCssPlugins: [
+          require('postcss-preset-env')({ stage: 0 }),
+          require('postcss-nested'),
+        ],
       },
-      __key: "images",
+      resolve: 'gatsby-plugin-postcss',
+    },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/assets/images/',
+      },
+      __key: 'images',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "pages",
+      __key: 'pages',
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
           families: [
             'Roboto',
-          ]
-        }
-      }
+          ],
+        },
+      },
     },
   ],
-};
+}
