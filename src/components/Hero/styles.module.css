@@ -8,7 +8,7 @@
 }
 
 .container {
-  max-width: var(--div-max-size);
+  max-width: calc(var(--div-max-size) - 200px);
   width: 100%;
   display: flex;
   align-items: center;
