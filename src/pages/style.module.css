@@ -1,11 +1,9 @@
-@import "./style.css";
-
 .pageStyles {
-    color: "#232129";
-    padding: "96px";
-    font-family: "-apple-system, Roboto, sans-serif, serif";
+  color: "#232129";
+  padding: "96px";
+  font-family: "Roboto", serif;
 }
 
 .headingAccentStyles {
-    color: var(--blue);
+  color: var(--blue);
 }

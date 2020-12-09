@@ -1,13 +1,11 @@
-import * as React from "react"
+import React from 'react'
 
 import Hero from '../components/Hero'
 
-const IndexPage = () => {
-  return (
-    <>
-      <Hero />
-    </>
-  )
-}
+const IndexPage = () => (
+  <>
+    <Hero />
+  </>
+)
 
 export default IndexPage

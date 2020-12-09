@@ -11,7 +11,8 @@ const Hero = () => (
           Aprenda programação de forma objetiva
         </h1>
         <h2 className={styles.subtitle}>
-          Desbrave tecnologias utilizadas pelo mercado construindo projetos com a gente.
+          Desbrave tecnologias utilizadas pelo mercado construindo projetos
+          com a gente.
         </h2>
       </div>
       <StaticImage
