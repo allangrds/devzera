@@ -3,9 +3,13 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.module.css'
 
-const Container = ({ children }) => (
-  <div className={styles.container}>
-    { children }
+const Container = ({
+  children,
+}) => (
+  <div className={styles.wrapper}>
+    <div className={styles.container}>
+      { children }
+    </div>
   </div>
 )
 
