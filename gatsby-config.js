@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Devzera',
+    siteUrl: 'https://devzera.com.br',
+    description: 'Aprendendo e compartilhando tecnologia',
+  },
   plugins: [
     "gatsby-plugin-postcss",
     {
@@ -17,7 +22,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/assets/images/",
       },
       __key: "images",
     },
@@ -28,6 +33,16 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: [
+            'Roboto',
+          ]
+        }
+      }
     },
   ],
 };
