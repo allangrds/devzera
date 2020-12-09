@@ -33,7 +33,7 @@
 
 .title {
   color: var(--color-black-1);
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
   font-size: 3.5em;
   font-weight: bold;
   line-height: 65px;
@@ -43,7 +43,7 @@
 
 .subtitle {
   color: var(--color-gray-1);
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
   font-size: 2em;
   line-height: 35px;
   max-width: 50ch;

@@ -13,7 +13,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint --config .eslintrc 'src/**/*.js'",
+    "eslint": "eslint --config .eslintrc 'src/**/*.js'",
+    "stylelint": "stylelint './src/**/*.css'",
+    "lint": "npm run stylelint && npm run eslint",
     "commit": "cz"
   },
   "license": "0BSD",
@@ -32,7 +34,7 @@
     "gatsby-source-filesystem": "2.7.0",
     "gatsby-transformer-sharp": "2.8.0",
     "postcss": "8.2.0",
-    "prop-types": "^15.7.2",
+    "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0"
@@ -44,7 +46,9 @@
     "eslint": "7.15.0",
     "eslint-config-pagarme-react": "3.0.0",
     "prettier": "2.2.1",
-    "prettier-eslint": "12.0.0"
+    "prettier-eslint": "12.0.0",
+    "stylelint": "13.8.0",
+    "stylelint-config-standard": "20.0.0"
   },
   "config": {
     "commitizen": {
