@@ -1,12 +1,14 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-// import styles from './styles.module.css'
 import {
+  Container,
   Hero,
   Featured,
   SEO,
+  Timeline,
 } from '../components'
+import styles from './styles.module.css'
 
 const FreeContentIcon = (
   <StaticImage
@@ -36,6 +38,36 @@ const TechsIcon = (
   />
 )
 
+const content = [
+  {
+    steps: [
+      'Protocolo TCP/IP 1',
+      'Protocolo TCP/IP 2',
+      'Protocolo TCP/IP 3',
+      'Protocolo TCP/IP 4',
+    ],
+    title: 'Logica de programacao',
+  },
+  {
+    steps: [
+      'Protocolo TCP/IP 1',
+      'Protocolo TCP/IP 2',
+      'Protocolo TCP/IP 3',
+      'Protocolo TCP/IP 4',
+    ],
+    title: 'Logica de programacao 2',
+  },
+  {
+    steps: [
+      'Protocolo TCP/IP 1',
+      'Protocolo TCP/IP 2',
+      'Protocolo TCP/IP 3',
+      'Protocolo TCP/IP 4',
+    ],
+    title: 'Logica de programacao 2',
+  },
+]
+
 const IndexPage = () => (
   <>
     <SEO title="Home" />
@@ -46,7 +78,7 @@ const IndexPage = () => (
       alt="Gradiente de cinza para branco"
       layout="fluid"
     />
-    <section>
+    <section className={styles.featured}>
       <Featured
         title="Não pague nada"
         description="Você tem acesso a todo o conteúdo sem pagar nada."
@@ -63,6 +95,14 @@ const IndexPage = () => (
         como também algumas tecnologias do mercado."
         icon={TechsIcon}
       />
+    </section>
+    <section className={styles.timeline}>
+      <Container>
+        <h3 className={styles.title}>
+          Etapas do aprendizado
+        </h3>
+      </Container>
+      <Timeline content={content} />
     </section>
   </>
 )
